@@ -1,0 +1,19 @@
+.text{
+  color: yellow;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.picfix{
+  width: 300px;
+}
+
+.padding{
+padding-top: 4em;
+}
+
+.infocolor{
+color: red
+;
+}

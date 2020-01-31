@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>MOON MINER</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+  <script data-who="💎 Made with naker.io 💎" src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.6/viewer.js"
+    data-option="{|environment|:{|gradient|:|horizontal|,|sensitivity|:0.8,|colorStart|:[39,38,42,1],|colorEnd|:[66,67,68,1]},|particle|:{|life|:5,|power|:0.01,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:20,|colorStart|:[116,129,92,0],|colorEnd|:[198,188,107,0.52],|sizeStart|:1.57,|sizeEnd|:3.14,|direction1|:{|x|:0,|y|:100,|z|:100},|direction2|:{|x|:0,|y|:0,|z|:0}}}"></script>
+
+  <header>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text"> Moon Miner</h1>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-12"> <img onclick="mineCheese()" class="picfix" src="moon.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12"><span>
+            <h4 class="text">Cheese Counter</h4><span id="cheese"> </span>
+          </span></div>
+        <div class="col-12"><span>
+            <h4 class="text">Cheese Per Second</h4><span id="cheesePerSec"> </span>
+          </span></div>
+        <div class="col-12"><span>
+            <h4 class="text">Mine Power</h4><span id="mine"> </span>
+          </span></div>
+        <div class="col-12"><span>
+            <h4 class="text">Miners</h4><span id="minerInfo.miners.minerQuantity"> </span>
+          </span></div>
+        <div class="col-12"><span>
+            <h4 class="text">Rovers</h4><span id="roverInfo.rovers.roverQuantity"> </span>
+          </span></div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row padding text">
+          <div class="col-3">
+            <button onclick="buyPickaxe()" type="button" class="btn btn-dark">
+              <h5 class="text">Upgrade Pickaxe </h5 class="text"> <br><span id="pickaxePrice"> </span>
+            </button>
+            <p class="infocolor">Makes each click twice as effective.</p>
+          </div>
+          <div class="col-3"> <button onclick="buySharpenPickaxe()" type="button" class="btn btn-dark">
+              <h5 class="text">Sharpen Pickaxe </h5 class="text"> <br><span id="sharpenPickaxePrice"> </span>
+            </button>
+            <p class="infocolor">Makes Pickaxe 10 times more effective of the current mine value, in turn it is very
+              expensive.</p>
+          </div>
+          <div class="col-3"><button onclick="hireMiner()" type="button" class="btn btn-dark">
+              <h5 class="text">Hire Miners </h5 class="text"> <br><span id="minerInfo.miners.minerPrice"> </span>
+            </button>
+            <p class="infocolor">Hiring a miner to work along side of you gets you 1 cheese a second. Hire as many as
+              you want!</p>
+          </div>
+          <div class="col-3"><button onclick="hireRover()" type="button" class="btn btn-dark">
+              <h5 class="text">Hire Rover </h5 class="text"> <br><span id="roverInfo.rovers.roverPrice"> </span>
+            </button>
+            <p class="infocolor">Hiring a rover helps you get 50 cheese a second, very effective, very expensive. </p>
+          </div>
+
+
+        </div>
+      </div>
+
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
